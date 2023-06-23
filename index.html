@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">    
+  </head>
+  <body id="body">
+    <div id="header" class="container-fluid">
+      <h2>MULTIPLICATION TABLE</h2>
+      
+    </div>    
+    <div id="maindiv" class="container">
+      <div id="row1" class="row">             
+        <div id = "colform" class="col-md-3">        
+          <form id = "form">
+            <label>Minimum Column Value:</label><br>
+            <input class="inputs" name = "minc" id="minc" type="text" placeholder="Enter a number"/><br>
+            <div class="background-slider">
+              <div id="minCSlider">                
+              </div>
+            </div><br>
+            <label>Maximum Column Value:</label><br>
+            <input class="inputs" name="maxc" id="maxc" type="text" placeholder="Enter a number"/><br>
+            <div class="background-slider">
+              <div id="maxCSlider">                
+              </div>
+            </div><br>       
+            <label>Minimum Row Value:</label><br>
+            <input class="inputs" name="minr" id="minr" type="text" placeholder="Enter a number"/><br>
+            <div class="background-slider">
+              <div id="minRSlider">                
+              </div>
+            </div><br> 
+            <label>Maximum Row Value:</label><br>
+            <input class="inputs" name="maxr" id="maxr" type="text" placeholder="Enter a number"/><br>
+            <div class="background-slider">
+              <div id="maxRSlider">                
+              </div>
+            </div><br> 
+            <button name="submit" class= "btn btn-primary mt-2" id = "submit" type="submit">Save Table</button>
+            <button type = "button" class="btn btn-primary mt-2" id = "clear-btn" onclick="clr()">Reset the Slider </button>
+          </form>
+        </div>        
+        <div id = "coltable" class="col-md-9">
+          <button class= "btn btn-primary mt-2" id="btn-delete">Delete Selected Tabs</button>
+          <ul> 
+            <li id="mainli"><a id="maina" href="#maintab"> Current Tab</a></li>
+          </ul>
+          <div id="maintab">   
+            <table id="table"></table>         
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Jquery Validate plugin-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+    <!--Jquery UI-->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>    
+    <!--JS script-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
