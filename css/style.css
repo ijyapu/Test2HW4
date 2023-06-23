@@ -1,1 +1,111 @@
 
+#body {
+  background-image: linear-gradient(to bottom right, darkgreen, ivory);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+
+
+#maindiv {
+  background-image: linear-gradient(to bottom right, darkgreen, ivory);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#header {
+  background-color: limegreen;
+  text-align: center;
+  border-bottom-style: solid;
+}
+
+#btn-delete {
+  background: red;
+}
+
+#submit {
+  background: #00F35C;
+  color: black;
+}
+.error {
+  color: rgb(206, 0, 0);
+  font-weight: normal;
+}
+#coltable {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 420px;
+  background-color: beige;
+}
+.ui-tabs .ui-tabs-nav{
+  background: rgb(0, 0, 0);
+}
+#coltable .ui-tabs-nav a{
+  background-color: burlywood;
+  color: white;
+}
+.ui-tabs .ui-tabs-nav li {
+  background-color: red;
+  color: white;
+}
+#coltable .ui-state-active a{
+  color: white;
+  background-color: #00d351;
+}
+#coltable .ui-state-active #maina{
+  color: white;
+  background-color: green;
+}
+
+.ui-tabs .ui-tabs-nav #maina{
+  font-weight: bold;
+  color: black;
+  background-color: burlywood;
+}
+
+table {
+  margin: 50px auto;
+  color:white;
+  width: 100%;
+}
+thead > tr > th:not(th:nth-child(1)) {
+  background-color: teal;
+  padding: 3px;
+  text-align: center;
+  border: solid goldenrod;
+}
+tbody > tr > th {
+  background-color: teal;
+  padding: 3px;
+  text-align: center;
+  border: solid goldenrod;
+}
+tbody > tr > td {
+  border: solid teal;
+}
+tr:nth-child(even) {
+  background-color: #001c09;
+  
+}
+tr:nth-child(odd){
+  color: black;
+}
+.background-slider {  
+  margin: 2px 0px 0px 42px;
+}
+#minCSlider, #maxCSlider, #minRSlider, #maxRSlider {
+  width: 179px; 
+  height: 20px; 
+  border: none;
+  background: black no-repeat;
+}
+#minCSlider .ui-slider-handle, #maxCSlider .ui-slider-handle, #minRSlider .ui-slider-handle, #maxRSlider .ui-slider-handle {
+  width:14px; 
+  height:20px; 
+  top: 0px;
+  background: #00d351 no-repeat;
+}
